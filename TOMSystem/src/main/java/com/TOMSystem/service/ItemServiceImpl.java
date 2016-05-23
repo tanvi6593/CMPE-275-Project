@@ -5,8 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.TOMSystem.Item.Item;
+
 import com.TOMSystem.dao.ItemDao;
+import com.TOMSystem.model.Item;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -42,6 +43,41 @@ public class ItemServiceImpl implements ItemService {
 	public List getAllItems() {
 		// TODO Auto-generated method stub
 		return itemDao.getAllItems();
+	}
+	
+	@Transactional
+	public List getDrinks() {
+		// TODO Auto-generated method stub
+		return itemDao.getDrinks();
+	}
+
+	@Transactional
+	public List getAppetizers() {
+		// TODO Auto-generated method stub
+		return itemDao.getAppetizers();
+	}
+	@Transactional
+	public List getMainCourse() {
+		// TODO Auto-generated method stub
+		return itemDao.getMainCourse();
+	}
+
+	@Transactional
+	public List getDesserts() {
+		// TODO Auto-generated method stub
+		return itemDao.getDesserts();
+	}
+
+	@Transactional
+	public List getUnavailableItems() {
+		// TODO Auto-generated method stub
+		return itemDao.getUnavailableItems();
+	}
+
+	@Override
+	public void removeAll() {
+		// TODO Auto-generated method stub
+		itemDao.removeAll();
 	}
 
 }

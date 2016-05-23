@@ -4,7 +4,7 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <meta charset="UTF-8">
 
-<title>Elegant Login - Designscrazed</title>
+<title>Takeout Order Management System</title>
 <style>
 body {
     background: url('http://res.cloudinary.com/grubhub-marketing/image/upload/v1460472623/Marketing%20assets/2016-MarchSeasonal-Desktop-1200by550px-GH.jpg') no-repeat fixed center center;
@@ -94,37 +94,32 @@ body {
     background: #ff7b81;
 }
 
-
 </style>
-<!-- Comment -->
 </head>
 
 <body>
-
 <div class="logo"></div></br>
 </br>
 <div class="login-block">
     <h1>Login</h1>
-<<<<<<< HEAD
     <form action="authUser" method="POST" commandName ="user">
     <input type="text" value="" name="email" placeholder="Username" id="email" />
     <input type="password" value="" name="password" placeholder="Password" id="password" />
-    <button type="submit" name="action" commandName = "user">Login</button>
+    <button type="submit" name="action" >Login</button>
+    </form>
+    <br>
     
-    </form>
-    <p>${email}</p>
-=======
-    <form action="LoginPage" method="post">
-    <input type="text" value="" placeholder="Username" id="username" />
-    <input type="password" value="" placeholder="Password" id="password" />
-    <button>Login</button>
-    </form>
->>>>>>> 799d81ffefb0bdf9d1cec927e69fc982962b510a
-</div>
-<form action="SignupPage" method="post">
-<button>Signup</button>
+    <form action="SignupPage" method="post">
 
-</form>
+	<button type="submit" name="action" >SignUp</button>
+
+    <p>${email}</p>
+<p>${VerifiedUser}</p>
+</div>
+
+
+
+
 
 </body>
 
